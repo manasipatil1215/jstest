@@ -1,0 +1,25 @@
+<!-- 09 Event Handling -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 100px;
+        width: 100px;
+    }
+</style>
+<body>
+    <div class="box"></div>
+    <button id="change">Change the colour</button>
+</body>
+<script>
+    let box = document.querySelector(".box");
+    document.querySelector("#change").addEventListener("click", function () {
+        box.style.backgroundColor="brown";
+    })
+</script>
+</html>
